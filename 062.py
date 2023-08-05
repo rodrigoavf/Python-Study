@@ -26,3 +26,4 @@ while c != 'N':
         case _:
             print('Opção não válida')
 # Atualizado pelo GitHub
+# Atualizado no VSCode
