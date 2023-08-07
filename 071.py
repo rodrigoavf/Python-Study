@@ -44,10 +44,13 @@ while True:
             notas10 = int((saque-notas100*100-notas50*50-notas20*20)/10)
             
             print('Você receberá seu saque em:')
-            if notas100 > 0: print(f'{notas100} notas de R$100')
-            if notas50 > 0: print(f'{notas50} notas de R$50')
-            if notas20 > 0: print(f'{notas20} notas de R$20')
-            if notas10 > 0: print(f'{notas10} notas de R$10')
+            for i in [[notas100,100],[notas50,50],[notas20,20],[notas10,10]]:
+                if i[0] > 0: print(f'{i[0]} notas de R${i[1]}')
+            #Método alternativo:
+            #if notas100 > 0: print(f'{notas100} notas de R$100')
+            #if notas50 > 0: print(f'{notas50} notas de R$50')
+            #if notas20 > 0: print(f'{notas20} notas de R$20')
+            #if notas10 > 0: print(f'{notas10} notas de R$10')
 
             print('Saque efetuado com sucesso!')
         case 2: # Depósito
